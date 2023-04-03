@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Name - Online Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Product Name</h2>
+        <div class="product-info">
+            <div class="product-image">
+                <img src="product.jpg" alt="Product Image">
+            </div>
+            <div class="product-description">
+                <p>Description of the product goes here.</p>
+                <p>Price: $10.99</p>
+                <form action="add_to_cart.php" method="POST">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Online Shop</p>
+    </footer>
+</body>
+</html>
